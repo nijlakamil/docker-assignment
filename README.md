@@ -39,3 +39,6 @@ docker run -d --name backend-container --network app-network -p 3000:3000 task-b
 cd ../frontend
 docker build -t task-frontend .
 docker run -d --name frontend-container --network app-network -p 8080:80 task-frontend
+
+## Docker hub link
+https://hub.docker.com/repositories/nijla12
