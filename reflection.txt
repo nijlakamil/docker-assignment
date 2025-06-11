@@ -1,0 +1,7 @@
+This project was inspired by the need to understand how microservices can be deployed using Docker without Docker Compose. I chose a simple task manager to keep the focus on Docker operations rather than application complexity.
+
+The main challenge was managing container communication without Compose. I solved this by using Docker’s manual network and ensuring each service was correctly named and networked.
+
+Docker volumes helped retain MongoDB data, even after containers were removed. Healthcheck in Dockerfile was added to monitor backend service.
+
+This application could be improved by adding NGINX reverse proxy for load balancing, using Docker secrets for environment variables, and deploying on cloud providers with automated CI/CD pipelines.
